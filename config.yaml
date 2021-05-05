@@ -15,23 +15,23 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: jellyfin # unique identifier
+    name: The streaming platform
+    #description: 'You write code. They handle the rest.' # default=empty
+    url: 'https://jellyfin.valentinvie.fr/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: Nextcloud
+    name: The cloud platform
+    #description: 'Built for anything connected to the Internet.'
+    url: 'https://cloud.valentinvie.fr/'
     method: GET
     expectStatus: 200
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: Ombi
+    name: The request platform
+    url: 'https://requests.valentinvie.fr/'
     method: GET
     expectStatus: 200
