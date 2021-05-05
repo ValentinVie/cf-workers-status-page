@@ -20,7 +20,7 @@ monitors:
     description: 'The streaming platform' # default=empty
     url: 'https://jellyfin.valentinvie.fr/' # URL to fetch
     method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
+    expectStatus: 302 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
   - id: Nextcloud
@@ -28,7 +28,7 @@ monitors:
     description: 'The cloud platform'
     url: 'https://cloud.valentinvie.fr/'
     method: GET
-    expectStatus: 200
+    expectStatus: 302
 
   - id: Ombi
     name: Requests
